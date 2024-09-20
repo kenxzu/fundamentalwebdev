@@ -1,19 +1,13 @@
-
 * {
-    box-sizing: border-box;
- }
- body, section, header, div, p, h1, h2, h3, h4, ul, li {
-    margin: 0;
-    padding: 0;
- 
- }
+   box-sizing: border-box;
+}
+
  body {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-    background-color: #e4e7eb;
+    background-color: #F0F4F8;
     padding: 20px 50px;
     font-weight: 300;
-    background-color: white;   
  }
  section {
     padding: 10px;
