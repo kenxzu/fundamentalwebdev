@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade principal</title>
+    <!-- penentuan aturan style yang dipakai adalah 1
+     1. melalui inheritance yaitu mnurunkan beberapa property ke tinggkatan element dibawanya (font, color, text)
+     selain ketiga properti itu tidak bisa
+     2. specipyty (spesifistas)
+     3. lokasi (aturan terakhir yang bakalan terpakai)-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #desr{
+            color: blue;
+        }
+        p{
+            color: black;
+        }
+        #desr ul {
+            font-weight: bold;
+            color: black;
+        }
+
+        ul{
+            color: magenta;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="style/testcascade.css">
+        <!-- link rel="stylesheet" href="style/testcascade.css"> style kalah precedence dengan external style laiinya jika di letakkan setelahnya-->
+
+</head>
+<body>
+    <header>
+        <h1>Share Your Trave</h1>
+    </header>
+    <section id="desr">
+        <h2>New Your - Central Park</h2>
+        <ul>
+            <li style="color: #333;">Description</li>
+            <li>Review</li>
+            <p>dfsadfa</p>
+        </ul>
+        <article>
+            <h3>Description</h3>
+            <p class="last">bla bla blaa</p>
+        </article>
+    </section>
+    
+</body>
+</html>

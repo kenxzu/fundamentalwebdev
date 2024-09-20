@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/chicago.jpg);
+  background-size: cover;
+  /* Make the image cover the entire background */
+  background-repeat: contain;
+  /* Prevent the image from repeating */
+  width: 100%;
+  min-height: 100vh;
+  /* Ensure the body is at least as tall as the viewport */
+  font-weight: bold;
+  color: rgb(0, 255, 13)
+}
+
+#container {
+  display: flex;
+  /* Enable flexbox */
+  align-items: center;
+  /* Vertically center items */
+  justify-content: center;
+  /* Horizontally center items */
+
+}
+
+section {
+  display: inline-block;
+}
+
+#head {
+  background-color: red;
+  padding: 20px;
+}
+
+#logo {
+  display: inline-block;
+}
+
+nav {
+  display: inline-block;
+  
+}
