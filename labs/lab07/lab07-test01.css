@@ -1,0 +1,71 @@
+/* instruction 
+298 CHAPTER 7 CSS 2: Layout TEST YOUR KNOWLEDGE #1
+Modify lab07-test01.html by adding CSS in lab07-test01.css to implement the layout shown in Figure 7.16 (some of the styling as already been provided). 1. Set the background image on the <body> tag. Set the height to 100vh so it will always fill the entire viewport. Set the background-cover and background-position properties (see Chapter 4 for a refresher if needed).
+2. For the header, set its display to flex. Set justify-content to space- between and align-items to center. This will make the <h2> and the <nav> elements sit on the same line, but will expand to be aligned with the outside edges.
+3. To center the form in the middle of the viewport, set the display of the <main> element to flex, and align-items and justify-contents to center. Do the same for the <form> element.
+4. Fine-tune the size of the form elements by setting the flex-basis of label to 16em, the search box to 36em, and the submit button to 10em. The final result should look similar to that shown in Figure 7.16.
+*/
+
+html { box-sizing: border-box; }
+*, *:before, *:after {
+box-sizing: inherit;
+}   
+
+body {
+   padding: 0;
+   margin: 0;
+   background-image: url('img/P6120375.jpg');
+   background-size: cover; /* Ensures the image covers the container */
+   background-position: center; /* Keeps the image centered */
+   background-repeat: no-repeat; /* Prevents tiling */
+    
+}
+header {
+   color: white;         
+}
+header h2 {
+   font-size: 36px;
+   margin: 0.5em 0 0 0.5em ;
+}
+header nav {
+   font-size: 48px;
+   margin: 0.5em 0.5em 0 0;
+}
+
+ 
+main form {
+   width: 40em;
+   height: 80vh;   
+   color: white;            
+}
+main label {
+   display: inline-block;
+   height: 1.75em;
+   padding: 0.25em 0.25em;
+   font-size: 32px;
+   background-color: teal;
+}
+input[type="search"], input[type="submit"] {
+   display: inline-block;   
+   height: 3.5em;
+   padding: 0.25em;
+   font-size: 18px;
+}
+input[type="submit"] {
+   color: white;
+   background-color: #DA127D;
+   border: 0;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;      
+}
+
+/* add your styles below */
+
+
+
+
+
+
+
+
+/* the filename for the background image is images/P6120375.jpg  */
