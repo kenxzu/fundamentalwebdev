@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test CSS Selector</title>
+    <style>
+      div {
+        background-color: lightblue;
+        display: inline-block;
+        width: 100px;
+        height: 80px;
+      }
+      #first {
+        background-color: seagreen;
+        display: inline-block;
+      }
+      .circle {
+        background-color: royalblue;
+        border-radius: 50%;
+      }
+      .orange {
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Test CSS Selector</h1>
+
+    <div></div>
+    <!--id selector-->
+    <div id="first"></div>
+    <!--class selector-->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="orange"></div>
+    <!-- this take the circle class style and change casscade the style-->
+    <div class="circle orange"></div>
+    <div></div>
+    
+  </body>
+</html>
