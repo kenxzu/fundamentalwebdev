@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test CSS Selector</title>
     <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
       div {
         background-color: lightblue;
         display: inline-block;
@@ -22,6 +27,110 @@
       .orange {
         background-color: orange;
       }
+
+      /*attribute selector*/
+      input[type="text"] {
+        border-style: none;
+        border-bottom: 2px solid black;
+        margin-top: 20px;
+        background-color: beige;
+
+      a[href$=".pdf"] {
+          color: red;
+          font-weight: bold;
+      }
+
+      /*pseudo-class selector*/
+      :hover {
+        background-color: yellow;
+      }
+      /*pseudo-element selector*/
+      ::before {
+        content: "Hello";
+        color: red;
+      }
+      /*descendant selector*/
+      div div {
+        background-color: lightgreen;
+      }
+      /*child selector*/
+      div > div {
+        background-color: lightpink;
+      }
+      /*adjacent sibling selector*/
+      div + div {
+        background-color: lightgray;
+      }
+      /*general sibling selector*/
+      div ~ div {
+        background-color: lightyellow;
+      }
+      /*nth-child selector*/
+      div:nth-child(2) {
+        background-color: lightcoral;
+      }
+      /*nth-of-type selector*/
+      div:nth-of-type(2) {
+        background-color: lightblue;
+      }
+      /*last-child selector*/
+      div:last-child {
+        background-color: lightgreen;
+      }
+      /*first-child selector*/
+      div:first-child {
+        background-color: lightyellow;
+      }
+      /*not selector*/
+      div:not(.circle) {
+        background-color: lightgray;
+      }
+      /*empty selector*/
+      div:empty {
+        background-color: lightpink;
+      }
+      /*only-child selector*/
+      div:only-child {
+        background-color: lightblue;
+      }
+      /*only-of-type selector*/
+      div:only-of-type {
+        background-color: lightgreen;
+      }
+      /*target for pseudo-class selector*/
+      a:hover {
+        background-color: lightgray;
+      }
+      /*target for pseudo-element selector*/
+      ::before {
+        content: "Hello World";
+      }
+      /*target for descendant selector*/
+      div div {
+        background-color: lightgreen;
+      }
+      /*target for child selector*/
+      div > div {
+        background-color: lightpink;
+        
+
+        /*some of the contextual selectors*/
+        /*select not just a child */
+
+        div p{
+          color: #000;
+        }
+
+        ul a:link {
+          color: blue;
+        }
+
+        /*select h2 that is in child of div*/
+        div>h2{
+          color: red;
+        }
+
+   
     </style>
   </head>
 
@@ -38,6 +147,12 @@
     <!-- this take the circle class style and change casscade the style-->
     <div class="circle orange"></div>
     <div></div>
-    
+    <br />
+
+    <!-- target for attribute selector-->
+    <input type="text" />
+    <input type="text" />
+    <br/>
+
   </body>
 </html>

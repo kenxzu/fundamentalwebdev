@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /*FONT PROPERTIES  
+        font        : A combined family, style, size, variant, and wight property;
+        font-family : speccifies typeface/font (or generic font family)
+        font-size   : specifies font size
+        font-style : italic, oblique or normall
+        font-variant : normal, small-caps;
+        font-weight : specifies normal, bold, bolder, lighter, or a value
+                    between 100 and 900 in multiples of 100,
+                    where larger number repersents weighter(boldter text).
+        
+        setif; -> prety good.
+        good-approach : ideal, alternative, common, and then generic.
+        */
+        /*FONT SIZE   
+            cuz this is not word processor
+            making 12 pt text will mean 
+            that the fon't bounding box
+            (which in turn is roughtly the size
+            ot it charactert) will be 1/6 of an 
+            inch tall when printed:
+            - newer mobile device in recent
+            years have been increasing pixel
+            desities which is make given 
+            CSS pixel does not corelate to 
+            to a single device pixel. 
+            - Absoblue unit(eg inch, point) 
+            cannot atranslate very well
+            to pixel based device.
+            - SOLUTION : 
+            so text sizing percise and consistent
+            - use relative unit (em unit or %);
+            - both relative to parent's font size
+
+            <body> 16px (browser's default usually)
+            <p> 100% or 1em is 16 px
+            <h3> 125% or 1.125em = 18px
+            <h2> 150% or 1.5em = 24px
+            <h1> 200% or 2em = 32px
+
+
+
+                relative unit relative also with 
+                their parent relative
+                
+                For this reason, CSS3 now supports a new relative measure, the rem (for root em unit). This unit is 
+                always relative to the size of the root 
+                element (i.e., the <html> element)
+
+                
+        */
+
+        /*using scale 16*/
+
+        body {
+            font-size: 100%;
+        }
+        p{
+            font-size: 1em;
+        }
+        h3{
+            font-size: 1.125em;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+
+        h1{
+            font-size: 2em;
+        }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    browser's default text size is usually 16 pixels 
+    <p>100% or 1em is 16 px</p>
+    <h3>125% or 1.125em is 18px</h3>
+    <h2>150% or 1.5em is 24px</h2>
+    <h1>200% or 2em is 32px</h1>
+  </body>
+</html>

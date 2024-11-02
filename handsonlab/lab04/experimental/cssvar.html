@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable css-preprocessor</title>
+    <style>
+
+        :root{
+            --bg-color-main: #431c5d;
+            --bg-color-secondary: #e05915;
+            --fg-color-main: #e05915;
+            --padding-boxes : 4px;
+            --border-radius: 5px;
+            --fontsize-default : 18px;
+            --shadow-color: rgba(0, 0, 0, 0.22);
+            --dropshadow: 6px 5px 20px 1px var(--shadow-color);
+        }
+
+        header 
+        {
+            background-color: var(--bg-color-main);
+            color: var(--fg-color-main);
+            padding: var(--padding-boxes);
+            text-align: center;
+            font-size: var(--fontsize-default);
+            box-shadow: var(--dropshadow);
+        }
+        header button 
+        {
+            background-color: var(--bg-color-secondary);
+            color: var(--fg-color-main);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: var(--fontsize-default);
+            box-shadow: var(--dropshadow);
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
