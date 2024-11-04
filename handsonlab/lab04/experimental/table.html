@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLE</title>
+    <style>
+      .artistName {
+        background-color: blue;
+      }
+
+      /*for table */
+      table{
+        border-collapse: collapse;
+      }
+      td {
+        padding : 10px;
+      }
+
+
+      caption {
+        border-top : 1px solid black;
+        text-align : left;
+        font-family: Arial, Helvetica, sans-serif;
+        padding : 1em 0 1em 0;
+        text-transform: uppercase;
+      }
+      table{ 
+        border-top : 4px solid #DCA806;
+      }
+
+      thead tr {
+        background-color: #CACACA;
+      }
+
+      th{
+        padding: 0.6em;
+      }
+
+      tbody tr{
+        background-color:#F1F1F1;
+        border-bottom: 1px solid white;
+      }
+
+      tbody td {
+        padding: 0.5em;
+      }
+
+ 
+
+      /*zebra*/
+      tbody tr:nth-child(even) {
+        background-color: #E6E6E6;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #F1F1F1;
+      }
+      /*end of zebra*/
+
+      tbody tr:hover{
+        background-color: #b46464;
+        color: black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!--colspan-->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Birth(month & Year)</th>
+      </tr>
+      <tr>
+        <td>John Smith</td>
+        <td>05</td>
+        <td>2001</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <!--rowspan & caption table-->
+    <table>
+      <caption>
+        Table with rowspan and caption
+      </caption>
+      <colgroup>
+        <col class="artistName" />
+        <col class="titleColumn" />
+        <col class="yearColumn" />
+      </colgroup>
+      
+      <tfoot>
+        <tr>
+          <td colspan="3">My table is working</td>
+        </tr>
+      </tfoot>
+      <thead>
+
+        <th>Artist</th>
+        <th>Title</th>
+        <th>Year</th>
+      </thead>
+
+
+      <tbody>
+        <tr>
+          <td rowspan="3">Liam Payne</td>
+          <td>Teardrop</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>Bedoroom Floor</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Live Forever</td>
+          <td>2023</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+
+    <!--Border Table-->
+
+    <table>
+      <caption>
+        <em>Border Tabel</em>
+      </caption>
+      <tfoot>
+        <tr>
+          <td colspan="3">Jumlah data adalah 1</td>
+        </tr>
+      </tfoot>
+      <thead>
+        <th>NIM</th>
+        <th>Name</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1234</td>
+          <td>John Smitch</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <!--Boxes and Zebra-->
+    <table class="t4">
+      <caption>
+        <em>Border Tabel</em>
+      </caption>
+      <tfoot>
+        <tr>
+          <td colspan="3">Jumlah data adalah 1</td>
+        </tr>
+      </tfoot>
+      <thead>
+        <th>NIM</th>
+        <th>Name</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1234</td>
+          <td>John Smitch</td>
+        </tr>
+        <tr>
+          <td>1234</td>
+          <td>John Smitch</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
