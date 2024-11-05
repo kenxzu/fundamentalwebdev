@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="utf-8">
-   <title>Chapter 5</title>
-   <link rel="stylesheet" href="reset.css" />
-   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">       
-   <link rel="stylesheet" href="ch05-proj1.css" />
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chapter 5</title>
+    <link rel="stylesheet" href="reset.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+    />
+    <link rel="stylesheet" href="ch05-proj1.css" />
+  </head>
+  <body>
     <section>
-         <h3>Data</h3>
-         
-      
-         
+      <h3>Data</h3>
+      <table>
+        <caption>
+          Orders
+        </caption>
+        <colgroup>
+          <col class="Id" />
+        </colgroup>
+        <thead>
+          <th>Id</th>
+          <th>Date</th>
+          <th>Customer</th>
+          <th>Country</th>
+          <th>Progress</th>
+          <th>Status</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>123</td>
+            <td>2022-01-01</td>
+            <td>John Doe</td>
+            <td>USA</td>
+            <td>
+              <progress value="50" max="100"></progress>
+            </td>
+            <td><span class="status-shipped">Shipped</span></td>
+          </tr>
+          <tr>
+            <td>456</td>
+            <td>2022-02-02</td>
+            <td>Jane Smith</td>
+            <td>Canada</td>
+            <td>
+              <progress value="75" max="100"></progress>
+            </td>
+            <td><span class="status-pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>789</td>
+            <td>2022-03-03</td>
+            <td>Alice Johnson</td>
+            <td>UK</td>
+            <td>
+              <progress value="100" max="100"></progress>
+            </td>
+            <td><span class="status-processing">Processing</span></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-    
+
     <section>
-         <h3>Revise</h3>
-         
-        
-    </section>    
+      <h3>Revise</h3>
+      <form action="https://www.randyconnolly.com/tests/process.php" method="GET">
+        <fieldset>
+          <legend class="parentLegend">Filter Oreders</legend>
+          <label for="customer">Customer</label>
+          <input type="text" name="customer" id="customer" required />
+          <label for="country">Country</label>
+          <select name="country" id="country" required>
+            <option value="" disabled selected>Select your country?</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+            <fieldset>
+              <legend class="child">
+                Status
+              </legend>
+            
+              <input type="radio" name="status" value="pending" />Pending
+              <input type="radio" name="status" value="processing" />Processing
+              <input type="radio" name="status" value="shipped" />Shipped
+            </fieldset>
 
+          <label for="order">Order</label>
+          <input type="date" id="order"/>
+          <br/>
+          <button type="sumbit"> Submit </button>
+        </fieldset>
 
-</body>
+      </form>
+     
+    </section>
+  </body>
 </html>

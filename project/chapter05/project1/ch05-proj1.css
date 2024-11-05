@@ -4,7 +4,7 @@
 body {
    font-family: "Roboto", Verdana, Arial, sans-serif;
    font-size: 100%;
- background-color: #ECEFF1;    
+ background-color: #ECEFF1;  
 }
 
 section {
@@ -38,6 +38,59 @@ section h3 {
 
 
 /* table formatting -- you will add these */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
+th
+{
+    padding: 0.8em;
+    text-align: left;
+}
+
+tbody td {                                      
+    padding: 0.8em;
+                                                                                    
+}
+
+
+
+
+/* form styling -- you will add these */
+form{
+    margin: 0.6em;
+}
+
+label{
+
+    display: block;
+margin-top: 0.5em;
+}
+
+.parentLegend{
+    width: 80%;
+    text-align: center;
+    background-color: #263238;
+    color: white;
+}
+
+fieldset{
+    margin-top: 0.8em;
+}
+
+
+.status{
+    text-align: left;
+    color: black;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 0.4em;
+    margin-top: 0.7em;
+}
 
 
