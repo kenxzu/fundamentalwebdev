@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Html</title>
+  </head>
+  <body>
+    <header>
+      <h1>Learning Form</h1>
+    </header>
+    <section>
+        <h2>sturure</h2>
+      <form action="process.php" method="post">
+        <fieldset>
+            <legend>Details</legend>
+            <p>
+                <label>Title : </label>
+                <input type="text" name="title" />
+            </p>
+            
+                <label>Coutry : </label>
+                <select name="where">
+                <option>Choose a country</option>
+                <option>Canada</option>
+                <option>Findland</option>
+            </select>
+            </p>
+            <input type="submit"/>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+        <h2>text input control</h2>
+        <h3> dalam tag input type="x" </h3>
+        <ul>
+            <li>email </li>
+            <li>password</li>
+            <li>search</li>
+            <li>tel (telepun)</li>
+            <li>text (single text entry)</li>
+            <li>textarea (multiple line text)</li>
+            <li>url</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Choice Control</h2>
+
+        <h3>datalist-it's like autocomple</h3>
+        <h4>input type="text" name="city" list="cities"</h4>
+        <p>datalist id=cities</p>
+
+        <label> Masukan Kota </label>
+        <input type="text" name="city" list="cities">
+        <datalist id="cities">
+            <option>Culcata</option>
+            <option>Calgary</option>
+            <option>Bandung</option>
+        </datalist>
+
+        <label>placehollder</label>
+        <input type="text" placeholder="L#L #L#" pattern="[a-z][0-9][a-z] [0-9][a-z][0-9]" />
+
+        <label>Select</label>
+        <select name="choices" id="in">
+            <option>First</option>
+            <option>Second</option>
+            <option>Third</option>
+        </select>
+        
+        <label>Radio Button</label>
+        <input type="radio" name="where" value="1" checked> Javv
+        <input type="radio" name="where" value="2"> Python 
+        <input type="radio" name="where" value="3"> PHP
+        <br/>
+        <br/>
+        <label>Checkbox</label>
+        <label>what your order?</label> <br/>
+        <input type="checkbox" name="order" value="nasgor"> Nasi Goring <br/>
+        <input type="checkbox" name="order" value="naskun"> Nasi Kuning <br/>
+        <input type="checkbox" name="order" value="ayam"> Ayam <br/>
+    </section>
+    <section>
+        <h2>
+            Button element
+        </h2>
+
+        <p>This is asigned on input type property except tag button</p>
+
+
+        <ul>
+            <li>submit</li>
+            <li>reset</li>
+            <li>button</li>
+            <li>image - img as a btn</li>
+            <li>and tag button</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Number and range</h2>
+        <h3>Number</h3>
+        <label>Rate this food</label>
+        <input type="number" min="1" max="5" name="rate">
+
+        <h3>Range</h3>
+        <label>Happiness</label>
+        Lonely
+        <input type="range" min="0" max="10" step="1" name="feeling">
+        Extreamly Lonely
+
+        <br/>
+        <progress value="70" max="100">70%</progress>
+        <meter value="9" min="0" max="10" low="2" high="8">4 of 10</meter>
+
+    </section>
+    <section>
+        <h2>Color</h2>
+        <label>Pick Your Color : </label>
+        <input type="color" name="clr">
+    </section>
+    <section>
+        <h2>Date Time</h2>
+        <p>input type : date time</p>
+        <ul>
+            <li>date -yyyy-mm-dd</li>
+            <input type="date"/>
+            <li>time -hh-mm-ss</li>
+            <input type="time"/>
+            <li>datetime-local -automatic time</li>
+            <input type="datetime-local">
+            <li>week  -yyyy-w##</li>
+            <input type="week" />
+        </ul>
+    </section>
+
+    <section>
+        <h2>Accessible Form</h2>
+        <p>simple adding "for" after label -when user click label the control will recieve focuss</p>
+        <p>value for 'for' id/name of input</p>
+    </section>
+
+    <section>
+        <h2>Styling Form</h2>
+        <p>prefered : no border rounded and padding</p>
+    </section>
+    <section>
+        <h2>Form Design</h2>
+        <p>well-designed form communicatee to a user that site values
+            their time and data - make from attractive.. effective eesy to understand
+        </p>
+        <ul>
+            <li>use placeholder- indicate input format</li>
+            <li>group should vissually distict</li>
+            <li>use size, typographi and color for realtive importance of information
+            </li>
+            <li>primary action button should be clearly indicated with the largest visual contast-eg bold, text larger, contast color than secocdaray buttoon</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Validating User Input</h2>
+        <ul>
+            <li>required</li>
+            <li>correct data type</li>
+            <li>correct format</li>
+            <li>comparison</li>
+            <li>range check</li>
+            <li>custom</li>
+        </ul>
+        <h2>notifing the user</h2>
+        <ul>
+            <li>what</li>
+            <li>where</li>
+            <li>if approriate how do i fixit</li>
+        </ul>
+
+        <h2>Where to Perform Validation</h2>
+        <p>input tag adding pattern property and eg required</p>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>
