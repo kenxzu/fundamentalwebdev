@@ -1,28 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="utf-8">
-   <title>Chapter 5</title>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="variables-palette-7.css" >   
-   <link rel="stylesheet" href="ch05-proj2.css" />
-</head>
-<body>
-<form >
-<fieldset>
-   <legend>Advanced Art Work Search</legend>
-   
-    <div id="searchBox">
-     
-    </div>   
-    <div id="settingsBox">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chapter 5</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="variables-palette-7.css" />
+    <link rel="stylesheet" href="ch05-proj2.css" />
+  </head>
+  <body>
+    <form action="https://www.randyconnolly.com/tests/process.php" method="GET">
+      <fieldset>
+        <legend>Advanced Art Work Search</legend>
+
+        <div id="searchBox" type="text" name="search" placeholder="Search title" />
+        <input type="text" name="title" placeholder="Enter the title...">
+        <label for="subject">Subject</label>
+        <label><input type="radio" name="subject" value="1" />History</label>
+        <label><input type="radio" name="subject" value="2" />Portrait</label>
+        <label><input type="radio" name="subject" value="3" />Landscape</label>
+
+        <select name="category">
+          <option value="" disabled selected>Select Genre</option>
+          <option value="1">Baroque</option>
+          <option value="2">Renaissance</option>
+          <option value="3">Realism</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </div>
+
+        <div id="settingsBox">
+          <select name="setting" id="setting">
+            <option value="" disabled selected>Bulk Action</option>
+            <option value="1">Archive</option>
+            <option value="2">Edit</option>
+            <option value="3">Delete</option>
+            <option value="4">Collection</option>
+          </select>
+          
+          <input type="button" value="Apply To All" />
+        </div>
+
+        <div id="paintingBox">
+          <table>
+            <thead>
+              <caption>
+                Paintings
+              </caption>
+              <colgroup>
+                <col class="imgCol"/>
+              </colgroup>
+              
+              <tr>
+                
+                <th></th>
+                <th></th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+                <th>Gendre</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <label for="p1">
+                      <input type="checkbox" name="index[]" id="p1" value="10" />
+                      <img src="./images/125020.jpg" alt="" />
+                  </label>
+              </td>
+                
+                <td>Potrait of Aria Christina</td>
+                <td>Ken</td>
+                <td>1993</td>
+                <td>Realism</td>
+                <td><img src="./images/edit.png" alt="edit"><img src="./images/archive.png" alt="arch"><img src="./images/delete.png"></td>
+
+              </tr>
+
+            <tr>
+              
+                <td colspan="2">
+                  <label for="p2">
+                      <input type="checkbox" name="index[]" id="p2" value="20" />
+                      <img src="./images/125010.jpg" alt="" />
+                  </label>
+              </td>
+              <td>Potrit of William II, King </td>
+              <td>Hoy</td>
+              <td>1839</td>
+              <td>Realism</td>
+              <td><img src="./images/edit.png" alt="edit"><img src="./images/archive.png" alt="arch"><img src="./images/delete.png"></td>
+            
+            <tr>
+              <tr>
+              
+                <td colspan="2">
+                  <label for="p3">
+                      <input type="checkbox" name="index[]" id="p3" value="30" />
+                      <img src="./images/127010.jpg" alt="" />
+                  </label>
+              </td>
+              <td>There Girls From amsterdam</td>
+              <td>Hoy</td>
+              <td>1839</td>
+              <td>Realism</td>
+              <td><img src="./images/edit.png" alt="edit"><img src="./images/archive.png" alt="arch"><img src="./images/delete.png"></td>
+            
+            <tr>
+              <tr>
+              
+                <td colspan="2">
+                  <label for="p4">
+                      <input type="checkbox" name="index[]" id="p3" value="40" />
+                      <img src="./images/128010.jpg" alt="" />
+                  </label>
+              </td>
+              <td>Windmil at wijk</td>
+              <td>Tom</td>
+              <td>1990</td>
+              <td>Baroque</td>
+              <td><img src="./images/edit.png" alt="edit"><img src="./images/archive.png" alt="arch"><img src="./images/delete.png"></td>
+            
+            <tr>
 
 
-    </div>
-    <div id="paintingBox">
+              <tr>
+                <tr>
+                
+                  <td colspan="2">
+                    <label for="p5">
+                        <input type="checkbox" name="index[]" id="p5" value="50" />
+                        <img src="./images/130020.jpg" alt="" />
+                    </label>
+                </td>
+                <td>the p`ic</td>
+                <td>Ron</td>
+                <td>1880</td>
+                <td>Baroque</td>
+                <td><img src="./images/edit.png" alt="edit"><img src="./images/archive.png" alt="arch"><img src="./images/delete.png"></td>
+              
+              <tr>
+            </tbody>
 
-    </div> 
-</fieldset>  
-</form>
-</body>
+          </table>
+
+
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>
